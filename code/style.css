@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    color: white;
+    background-color: black;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+nav ul li{
+    padding: 50px;
+}
+
+.Game{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px ;
+}
