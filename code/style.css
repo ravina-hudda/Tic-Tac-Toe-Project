@@ -31,6 +31,7 @@ nav ul li{
     display: grid;
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
+    position: relative;
 }
 
 .mat{
@@ -47,11 +48,10 @@ nav ul li{
 }
 .Info{
     padding: 70px;
+    font-size: larger;
 }
 
-.img img{
-    display: none;
-}
+
 
 .br-0{
     border-right: 0px;
@@ -64,4 +64,39 @@ nav ul li{
 }
 .bb-0{
     border-bottom: 0px;
+}
+
+.img img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.reset{
+    margin: 13px 23px;
+    padding: 0px 23px;
+    font-size: larger;
+    cursor: pointer;
+    background-color: rgb(230, 220, 241);
+    border-radius: 1vw;
+}
+.line{
+    
+    width: 0vw;
+    height: 6px;
+    position: absolute;
+    background-color: black;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+   .Game{
+    flex-wrap: wrap;
+   }
+   .Info{
+    font-size: 1rem;
+   }
+   .board{
+    grid-template-columns: repeat(3, 16vw);
+    grid-template-rows: repeat(3, 16vw);
+}
 }
